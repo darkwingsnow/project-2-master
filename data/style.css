@@ -3,7 +3,7 @@
     width: 100px;
 }
 
-h1 {
+#heading {
     text-align: center;
     font-size: 8vw;
     margin-top: 20%;
@@ -19,9 +19,14 @@ h1 {
     margin: auto;
     border-radius: 20px;
 }
-footer{
+
+.buttons {
+    width: 48%;
+    margin: 5px auto;
+}
+
+footer {
     font-size: 5vw;
-    position: fixed;
-    bottom: 1%;
-    left: 3%;
+    margin-top: 353px;
+    margin-left: 35px;
 }

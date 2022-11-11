@@ -1,5 +1,9 @@
 
-
+/**
+ * StAuth10187: I Yongxing zhang, 000766325 certify that this material is my original work.
+ * No other person's work has been used without due acknowledgement.
+ * I have not made my work available to anyone else.
+ */
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
@@ -19,8 +23,8 @@ OneWire onewaire(oneWireBus);
 DallasTemperature DS18B20(&onewaire);
 
 // WiFi access parameters
-const char *ssid = "BELL733";
-const char *password = "why133256";
+const char *ssid = "";
+const char *password = "";
 
 DeviceAddress DS18B20Adrs;
 
@@ -41,7 +45,7 @@ String printAddress(DeviceAddress deviceAddress)
     }
     addr += String(deviceAddress[i], HEX);
   }
-  return addr+"\"";
+  return addr + "\"";
 }
 
 // *********************************************************************
